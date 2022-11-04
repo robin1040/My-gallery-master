@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.box-img{
+    width: 101.76px;
+    height: 101.76px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.box-img img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px rgb(126, 124, 124);
+}
+
+h1{
+    font-size: 14px;
+    text-align: center;
+    line-height: 17.07px;
+    font-weight: 600;
+    margin-top: 11.79px;
+    color: #4E5150;
+}
+
+.text p{
+    color: #A9A9A9;
+    font-weight: 600;
+    font-size: 10px;
+    text-align: center;
+    line-height: 12.19px;
+    margin-top: 4px;
+}
+
+.container-info{
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+
+}
+
+.item{
+    width: 78px;
+    height: 52px;
+    background-color: #E5E5E5;
+    font-weight: 600;
+    font-size: 12px;
+    border-radius: 12px;
+    line-height: 14.63px;
+    box-shadow: 5px 5px 5px rgb(22, 22, 22);
+
+}
+
+.other{
+    margin-left: 15px;
+}
+
+.item p:nth-child(1){
+    color: #4E5150;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.item p:nth-child(2){
+    color: #BDBDBD;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.container-grid{
+    width: 80vw;
+    margin: 39px auto 0 auto;
+    display: grid;
+    grid-template-areas:
+    'photo1 photo1 photo2 photo2 photo2 photo2'
+    'photo3 photo3 photo3 photo3 photo4 photo4'
+    'photo5 photo5 photo6 photo6 photo4 photo4';
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+  .item1 { grid-area: photo1; }
+  .item2 { grid-area: photo2; }
+  .item3 { grid-area: photo3; }
+  .item4 { grid-area: photo4; }
+  .item5 { grid-area: photo5; }
+  .item6 { grid-area: photo6;}
+
+  .container-grid div img{
+    width: 100%;
+    border-radius: 12px;
+  }
+
+footer{
+    margin-top: 36px;
+    margin-bottom: 24px;
+    text-align: center;
+    color: #B9BDCF;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: 500;
+}
+
+footer p a{
+    color: #B9BDCF;
+    font-weight: 700;
+}
+
+@media (min-width:667px) {
+
+    .text{
+        margin-top: 26px;
+    }
+
+    .box-img{
+        width: 156.76px;
+        height: 156.76px;
+    }
+
+    .item{
+        width: 100px;
+        height: 67px; 
+    }
+    .item p:nth-child(1){
+        padding-top: 20px;
+    }
+    
+    .item p:nth-child(2){
+        color: #BDBDBD;
+        text-align: center;
+        padding-top: 6px;
+    
+    }
+
+    .container-grid{
+        margin-top: 69px;
+    }
+
+    footer{
+        font-size: 18px;
+    }
+
+
+}
