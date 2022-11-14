@@ -9,6 +9,7 @@
 
 body{
     font-family: 'Montserrat', sans-serif;
+    min-width: 320px;
 }
 
 
@@ -80,15 +81,15 @@ h1{
 }
 
 .container-grid{
-    width: 80vw;
+    width: 85vw;
     margin: 39px auto 0 auto;
     display: grid;
     grid-template-areas:
     'photo1 photo1 photo2 photo2 photo2 photo2'
     'photo3 photo3 photo3 photo3 photo4 photo4'
     'photo5 photo5 photo6 photo6 photo4 photo4';
-    grid-gap: 10px;
-    padding: 10px;
+    gap: 10px;
+
   }
   
   .item1 { grid-area: photo1; }
@@ -104,7 +105,7 @@ h1{
   }
 
 footer{
-    margin-top: 36px;
+    margin-top: 80px;
     margin-bottom: 24px;
     text-align: center;
     color: #B9BDCF;
@@ -119,7 +120,6 @@ footer p a{
 }
 
 @media (min-width:667px) {
-
     .text{
         margin-top: 26px;
     }
@@ -148,9 +148,14 @@ footer p a{
         margin-top: 69px;
     }
 
+
     footer{
-        font-size: 18px;
+        font-size: 16px;
     }
+}
 
-
+@media (min-width:1000px){
+    .container-grid{
+        gap: 30px;
+    }
 }
